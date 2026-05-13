@@ -219,7 +219,7 @@ function Index() {
               },
               {
                 q: "Why is it $600?",
-                a: "Five weeks of live instruction, weekly feedback on submitted work, and a printed anthology shipped to your door. Comparable writing cohorts run $475–$5,000.",
+                a: "Five weeks of live instruction, weekly feedback on submitted work, and a printed anthology shipped to your door. Comparable writing cohorts run $500–$5,000.",
               },
               {
                 q: "What if I drop out?",
