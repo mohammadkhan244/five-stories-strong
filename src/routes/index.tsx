@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
     links: [
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600&display=swap",
       },
     ],
   }),
@@ -35,17 +35,17 @@ export const Route = createFileRoute("/")({
 
 const STRIPE_URL = "https://buy.stripe.com/3cIbJ13Eo4S80wO8Gt4wM05";
 
-const FICTION_PROMPTS = [
-  "Burned out creatively? Write fiction.",
-  "Feeling bored? Write fiction.",
-  "Tired of doomscrolling? Write fiction.",
-  "Grieving something? Write fiction.",
-  "Anxious about the future? Write fiction.",
-  "Angry and don't know why? Write fiction.",
-  "Processing a decision? Write fiction.",
-  "Feeling numb? Write fiction.",
-  "Celebrating something you can't explain? Write fiction.",
-  "Stuck in your head? Write fiction.",
+const FICTION_PROMPTS: [string, string][] = [
+  ["Burned out creatively?", "Write fiction."],
+  ["Feeling bored in a way you can't explain?", "Write fiction."],
+  ["Tired of content that sounds like everyone else's?", "Write fiction."],
+  ["Grieving something?", "Write fiction."],
+  ["Anxious about the future?", "Write fiction."],
+  ["Angry and don't know why?", "Write fiction."],
+  ["Processing a decision you can't talk about yet?", "Write fiction."],
+  ["Feeling numb?", "Write fiction."],
+  ["Celebrating something you can't quite name?", "Write fiction."],
+  ["Stuck in your head?", "Write fiction."],
 ];
 
 function StickyNav() {
@@ -65,7 +65,7 @@ function StickyNav() {
       }`}
     >
       <div className="mx-auto w-full max-w-[920px] px-6 flex items-center justify-between h-14">
-        <a href="#top" className="font-serif text-base">
+        <a href="#top" className="font-sans text-xs tracking-wide">
           Modern Myths
         </a>
         <div className="hidden sm:flex items-center gap-6 font-sans text-xs tracking-wide text-muted-foreground">
@@ -95,19 +95,30 @@ function Index() {
     <div id="top" className="min-h-screen bg-background text-foreground">
       <StickyNav />
       <main className="mx-auto w-full max-w-[680px] px-6 py-20 sm:py-28">
+        {/* TOP BAR */}
+        <p className="label-eyebrow">Modern Myths · Cohort</p>
+
         {/* HERO */}
-        <section>
-          <p className="label-eyebrow">Modern Myths · Cohort</p>
-          <h1 className="mt-8 text-[2.5rem] sm:text-5xl leading-[1.1] tracking-tight font-normal">
-            Five stories in five weeks.
+        <section className="mt-16">
+          <p className="label-eyebrow">A 5-week cohort</p>
+          <h1 className="mt-6 text-[2.5rem] sm:text-5xl leading-[1.1] tracking-tight font-normal">
+            Five Stories in Five Weeks
           </h1>
-          <p className="mt-6 text-xl italic text-muted-foreground">
-            Anthology in your hands.
-          </p>
+          <div className="mt-6 h-px w-[60px] bg-foreground" />
+
+          <div className="mt-10 space-y-6 text-lg leading-relaxed">
+            <p>
+              You're consuming more than ever. Ideas, frameworks, takes, other people's
+              stories. You're processing it all — or trying to. But something isn't moving.
+            </p>
+            <p>Fiction is how it moves.</p>
+          </div>
 
           <div className="mt-12 space-y-4 text-lg leading-[2]">
-            {FICTION_PROMPTS.map((line, i) => (
-              <p key={i}>{line}</p>
+            {FICTION_PROMPTS.map(([q, a], i) => (
+              <p key={i}>
+                <em>{q}</em> {a}
+              </p>
             ))}
           </div>
 
@@ -141,21 +152,33 @@ function Index() {
         {/* PREMISE */}
         <section>
           <h2 className="text-3xl leading-tight tracking-tight font-normal">
-            Most writers try to finish one thing. You'll finish five.
+            Fiction is emotional metabolism.
           </h2>
           <div className="mt-8 space-y-6 text-lg leading-relaxed">
             <p>
-              A novel takes years. A short story takes a week. The default narrative says
-              you're not a real writer until you've finished a novel, so most people spend
-              a decade in the foothills of Chapter 3 and call themselves frauds when they
-              put the draft down.
+              We consume constantly and metabolize almost nothing. The emotions that needed
+              somewhere to go — the grief, the anger, the decision you're circling, the
+              thing you're celebrating that nobody quite understands — they don't disappear.
+              They accumulate.
             </p>
             <p>
-              The default narrative is wrong. Finishing teaches what starting cannot. Five
-              finished stories will tell you more about your voice than five abandoned
-              novels ever could.
+              That's not a you problem. That's a container problem. Scrolling gives you
+              input with no output. Consuming other people's stories gives you sensation
+              without transformation. What you're missing isn't more content. It's a place
+              for the emotion to move through.
+            </p>
+            <p>
+              Fiction is that place. Not because you analyze it. Because it works on you
+              whether you're paying attention or not. That's why people cry at books and
+              feel embarrassed about it — they didn't choose to. The story found what was
+              stuck and moved it. Writing fiction works the same way, only faster. You
+              don't just receive the story. You build the container. And in building it,
+              you find out what you've been carrying.
             </p>
           </div>
+          <p className="mt-16 text-xl italic leading-relaxed text-center">
+            The novel you abandoned didn't fail you. The container was wrong.
+          </p>
         </section>
 
         <Divider />
@@ -167,15 +190,17 @@ function Index() {
               Writing alone
             </h3>
             <p className="mt-4 text-base italic text-muted-foreground leading-relaxed">
-              Another chapter abandoned. Another file gone quiet.
+              Another chapter abandoned. Another file gone quiet. Another year of meaning
+              to start.
             </p>
           </div>
           <div className="sm:pl-10">
             <h3 className="text-3xl leading-tight tracking-tight font-normal">
-              Writing with a cohort
+              Writing with a container
             </h3>
             <p className="mt-4 text-base italic text-muted-foreground leading-relaxed">
-              Five stories. Your name on a cover. Shipped to your door.
+              Five stories. Craft you can feel working. Your name on a cover, shipped to
+              your door.
             </p>
           </div>
         </section>
@@ -189,16 +214,31 @@ function Index() {
           </h2>
           <ol className="mt-10 space-y-10">
             {[
-              "Each session opens with a 15-minute writing exercise. Three objects plus one genre. The constraint kills perfectionism.",
-              "Then we study the craft concept you can already spot in the draft you just wrote. Theory becomes explanatory, not aspirational.",
-              "You submit one finished story per week. I read every one. Weekly written feedback.",
-              "Week 5: your five stories are collected into a printed anthology. Your name on the cover. Shipped to you.",
-            ].map((text, i) => (
+              {
+                lead: "Each session opens with a 15-minute writing exercise.",
+                rest: " Three objects plus one genre, drawn at random. The constraint kills perfectionism — you can't pre-plan a story about a kettle, a stolen watch, and a foghorn in the horror genre. You just write.",
+              },
+              {
+                lead: "Then we study the craft concept you can already spot in the draft you just wrote.",
+                rest: " Theory becomes explanatory, not aspirational, because the evidence is already on your page. You don't learn craft in the abstract. You recognize it in something you made five minutes ago.",
+              },
+              {
+                lead: "You submit one finished story per week. I read every one.",
+                rest: " Written feedback on every submission. Not notes toward a better draft — a proper read, responded to in writing.",
+              },
+              {
+                lead: "Week 5: your five stories become a printed anthology.",
+                rest: " Your name on the cover. Shipped to your door. Not polished pieces — the record of what those five weeks metabolized into.",
+              },
+            ].map((item, i) => (
               <li key={i} className="flex gap-6">
-                <span className="font-sans text-sm text-muted-foreground pt-1 tabular-nums">
+                <span className="font-sans text-xs text-muted-foreground pt-2 tabular-nums tracking-wider" style={{ fontVariant: "small-caps" }}>
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <p className="text-lg leading-relaxed flex-1">{text}</p>
+                <p className="text-lg leading-relaxed flex-1">
+                  <em>{item.lead}</em>
+                  {item.rest}
+                </p>
               </li>
             ))}
           </ol>
@@ -242,6 +282,42 @@ function Index() {
 
         <Divider />
 
+        {/* IS THIS FOR YOU */}
+        <section>
+          <h2 className="label-eyebrow text-sm">Is this for you?</h2>
+          <ul className="mt-10 space-y-10">
+            {[
+              {
+                title: "You've been \"working on a novel\" for over a year and the file's gone quiet.",
+                body: "The container is wrong. Not you.",
+              },
+              {
+                title: "You've never written fiction but keep thinking you should.",
+                body: "Four of the five who finished last year had never written a story before they enrolled.",
+              },
+              {
+                title: "Something in your life is asking to be processed and you don't have a tool for it.",
+                body: "Fiction is that tool. You'll know it's working when you finish the first one.",
+              },
+            ].map((item, i) => (
+              <li key={i} className="flex gap-5">
+                <span aria-hidden className="text-foreground pt-1 text-lg">✓</span>
+                <div className="flex-1">
+                  <p className="text-lg leading-snug font-semibold">{item.title}</p>
+                  <p className="mt-2 text-lg leading-relaxed">{item.body}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <hr className="my-10 border-0 h-px bg-[var(--rule)]" />
+          <p className="text-base italic leading-relaxed text-muted-foreground">
+            This isn't for anyone looking for shortcuts, templates, or a guaranteed path
+            to publishing.
+          </p>
+        </section>
+
+        <Divider />
+
         {/* LOGISTICS */}
         <section>
           <dl className="space-y-5">
@@ -252,7 +328,7 @@ function Index() {
               ["Size", "Capped at 10"],
               [
                 "Included",
-                "Live instruction, weekly feedback on submitted work, printed anthology shipped to your door",
+                "Live instruction, weekly written feedback on submitted work, printed anthology shipped to your door",
               ],
               ["Price", "$600"],
               ["Enrollment closes", "Sunday May 31"],
@@ -270,28 +346,6 @@ function Index() {
 
         <Divider />
 
-        {/* WHO IT'S FOR — check rows */}
-        <section>
-          <ul className="space-y-8">
-            {[
-              "You've been \"working on a novel\" for over a year and the file's gone quiet. The container is wrong. Not you.",
-              "You've never written fiction but keep thinking you should. Four of the five who finished last year had never written fiction.",
-              "Something in your life is asking to be processed and you don't have a tool for it. Fiction is that tool.",
-            ].map((text, i) => (
-              <li key={i} className="flex gap-5 text-lg leading-relaxed">
-                <span aria-hidden className="text-primary pt-0.5">✓</span>
-                <p className="flex-1">{text}</p>
-              </li>
-            ))}
-          </ul>
-          <hr className="my-10 border-0 h-px bg-[var(--rule)]" />
-          <p className="text-base italic leading-relaxed text-muted-foreground">
-            This isn't for anyone looking for shortcuts, templates, or a guaranteed path to publishing.
-          </p>
-        </section>
-
-        <Divider />
-
         {/* FAQ */}
         <section id="faq">
           <h2 className="text-3xl leading-tight tracking-tight font-normal">
@@ -304,8 +358,8 @@ function Index() {
                 a: "Yes. Of the five who finished last year, four had never written fiction.",
               },
               {
-                q: "Can I write genre fiction — romantasy, erotica, business-flavored stories?",
-                a: "Yes. Each session we draw a genre at random for the exercise, so you'll write across romantasy, horror, literary, whatever comes up. The craft skills we practice apply to all of them. Write what you want to write.",
+                q: "Can I write genre fiction — romantasy, erotica, business fiction?",
+                a: "Yes. The genre each week is whatever you draw. Romantasy, horror, literary, erotica — the craft concepts apply across all of them. Write what you want to write.",
               },
               {
                 q: "What if I miss a session?",
@@ -317,7 +371,7 @@ function Index() {
               },
               {
                 q: "Why is it $600?",
-                a: "Five weeks of live instruction, weekly written feedback, and a printed anthology shipped to your door. Comparable writing cohorts run $500 to $5,000.",
+                a: "Five weeks of live instruction, weekly written feedback on every submission, and a printed anthology shipped to your door. Comparable writing cohorts run $500–$5,000.",
               },
               {
                 q: "What if I drop out?",
@@ -345,12 +399,22 @@ function Index() {
         {/* ABOUT */}
         <section>
           <h2 className="label-eyebrow">About</h2>
-          <p className="mt-6 text-lg leading-relaxed">
-            I'm Mohammad. I write Modern Myths, an essay series about the hidden stories
-            shaping how people think and decide. I've written 214 short stories in 214
-            weeks. I built this cohort after watching too many writers I respect abandon
-            novels because they'd inherited the wrong container.
-          </p>
+          <div className="mt-6 space-y-6 text-lg leading-relaxed">
+            <p>
+              I'm Mohammad. I write Modern Myths, an essay series about the hidden
+              stories shaping how people think and decide. I've written 214 short stories
+              in 214 weeks — one per week, without missing one.
+            </p>
+            <p>
+              I built this cohort after watching too many writers I respect abandon novels
+              because they'd inherited the wrong container. The novel isn't the problem.
+              The container is.
+            </p>
+            <p>
+              Last year I realized I never actually taught anyone how to write fiction. I
+              showed them they already knew how.
+            </p>
+          </div>
         </section>
 
         {/* FINAL CTA */}
