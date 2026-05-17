@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -34,9 +35,65 @@ export const Route = createFileRoute("/")({
 
 const STRIPE_URL = "https://buy.stripe.com/3cIbJ13Eo4S80wO8Gt4wM05";
 
+const FICTION_PROMPTS = [
+  "Burned out creatively? Write fiction.",
+  "Feeling bored? Write fiction.",
+  "Tired of doomscrolling? Write fiction.",
+  "Grieving something? Write fiction.",
+  "Anxious about the future? Write fiction.",
+  "Angry and don't know why? Write fiction.",
+  "Processing a decision? Write fiction.",
+  "Feeling numb? Write fiction.",
+  "Celebrating something you can't explain? Write fiction.",
+  "Stuck in your head? Write fiction.",
+];
+
+function StickyNav() {
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  return (
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-200 ${
+        scrolled
+          ? "bg-background border-b border-[var(--rule)]"
+          : "bg-transparent border-b border-transparent"
+      }`}
+    >
+      <div className="mx-auto w-full max-w-[920px] px-6 flex items-center justify-between h-14">
+        <a href="#top" className="font-serif text-base">
+          Modern Myths
+        </a>
+        <div className="hidden sm:flex items-center gap-6 font-sans text-xs tracking-wide text-muted-foreground">
+          <a href="#how-it-works" className="hover:text-foreground transition-colors">
+            How it works
+          </a>
+          <span aria-hidden>·</span>
+          <a href="#testimonials" className="hover:text-foreground transition-colors">
+            Testimonials
+          </a>
+          <span aria-hidden>·</span>
+          <a href="#faq" className="hover:text-foreground transition-colors">
+            FAQ
+          </a>
+          <span aria-hidden>·</span>
+          <a href="#enroll" className="hover:text-foreground transition-colors">
+            Enroll
+          </a>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
 function Index() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div id="top" className="min-h-screen bg-background text-foreground">
+      <StickyNav />
       <main className="mx-auto w-full max-w-[680px] px-6 py-20 sm:py-28">
         {/* HERO */}
         <section>
@@ -47,9 +104,15 @@ function Index() {
           <p className="mt-6 text-xl italic text-muted-foreground">
             Anthology in your hands.
           </p>
-          <p className="mt-10 text-lg leading-relaxed">
-            You opened a Google Doc. Typed Chapter 1. Closed it. Three months later, you
-            did it again. This cohort is for you.
+
+          <div className="mt-12 space-y-4 text-lg leading-[2]">
+            {FICTION_PROMPTS.map((line, i) => (
+              <p key={i}>{line}</p>
+            ))}
+          </div>
+
+          <p className="mt-16 text-xl italic leading-relaxed">
+            "The only time I'm not writing fiction, I'm recovering so I can write fiction."
           </p>
 
           <div className="mt-12">
@@ -65,7 +128,15 @@ function Index() {
           </div>
         </section>
 
-        <Divider />
+        {/* SOCIAL PROOF BAR */}
+        <div className="py-20 text-center">
+          <p
+            className="font-sans text-xs text-muted-foreground"
+            style={{ fontVariant: "small-caps", letterSpacing: "0.12em" }}
+          >
+            Five writers finished last year. Four had never written fiction before.
+          </p>
+        </div>
 
         {/* PREMISE */}
         <section>
@@ -89,8 +160,30 @@ function Index() {
 
         <Divider />
 
+        {/* CONTRAST BLOCK */}
+        <section className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-0 sm:divide-x sm:divide-[var(--rule)]">
+          <div className="sm:pr-10">
+            <h3 className="text-3xl leading-tight tracking-tight font-normal">
+              Writing alone
+            </h3>
+            <p className="mt-4 text-base italic text-muted-foreground leading-relaxed">
+              Another chapter abandoned. Another file gone quiet.
+            </p>
+          </div>
+          <div className="sm:pl-10">
+            <h3 className="text-3xl leading-tight tracking-tight font-normal">
+              Writing with a cohort
+            </h3>
+            <p className="mt-4 text-base italic text-muted-foreground leading-relaxed">
+              Five stories. Your name on a cover. Shipped to your door.
+            </p>
+          </div>
+        </section>
+
+        <Divider />
+
         {/* HOW IT WORKS */}
-        <section>
+        <section id="how-it-works">
           <h2 className="text-3xl leading-tight tracking-tight font-normal">
             How it works
           </h2>
@@ -114,7 +207,7 @@ function Index() {
         <Divider />
 
         {/* TESTIMONIALS */}
-        <section className="space-y-16">
+        <section id="testimonials" className="space-y-16">
           {[
             {
               quote:
@@ -177,29 +270,30 @@ function Index() {
 
         <Divider />
 
-        {/* WHO IT'S FOR */}
-        <section className="grid grid-cols-1 sm:grid-cols-2 gap-12">
-          <div>
-            <h3 className="label-eyebrow">Who this is for</h3>
-            <ul className="mt-5 space-y-3 text-base leading-relaxed">
-              <li>Writers who keep starting and never finishing.</li>
-              <li>People with a real day job and one hour on a weekend.</li>
-              <li>Anyone who wants a finished object to hold by July.</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="label-eyebrow">Who this isn't for</h3>
-            <ul className="mt-5 space-y-3 text-base leading-relaxed">
-              <li>Writers seeking an agent, a book deal, or a marketing plan.</li>
-              <li>People who want feedback without submitting work.</li>
-            </ul>
-          </div>
+        {/* WHO IT'S FOR — check rows */}
+        <section>
+          <ul className="space-y-8">
+            {[
+              "You've been \"working on a novel\" for over a year and the file's gone quiet. The container is wrong. Not you.",
+              "You've never written fiction but keep thinking you should. Four of the five who finished last year had never written fiction.",
+              "Something in your life is asking to be processed and you don't have a tool for it. Fiction is that tool.",
+            ].map((text, i) => (
+              <li key={i} className="flex gap-5 text-lg leading-relaxed">
+                <span aria-hidden className="text-primary pt-0.5">✓</span>
+                <p className="flex-1">{text}</p>
+              </li>
+            ))}
+          </ul>
+          <hr className="my-10 border-0 h-px bg-[var(--rule)]" />
+          <p className="text-base italic leading-relaxed text-muted-foreground">
+            This isn't for anyone looking for shortcuts, templates, or a guaranteed path to publishing.
+          </p>
         </section>
 
         <Divider />
 
         {/* FAQ */}
-        <section>
+        <section id="faq">
           <h2 className="text-3xl leading-tight tracking-tight font-normal">
             Questions
           </h2>
@@ -208,6 +302,10 @@ function Index() {
               {
                 q: "I've never written fiction before. Will this work?",
                 a: "Yes. Of the five who finished last year, four had never written fiction.",
+              },
+              {
+                q: "Can I write genre fiction — romantasy, erotica, business-flavored stories?",
+                a: "Yes. Each session we draw a genre at random for the exercise, so you'll write across romantasy, horror, literary, whatever comes up. The craft skills we practice apply to all of them. Write what you want to write.",
               },
               {
                 q: "What if I miss a session?",
@@ -219,7 +317,7 @@ function Index() {
               },
               {
                 q: "Why is it $600?",
-                a: "Five weeks of live instruction, weekly feedback on submitted work, and a printed anthology shipped to your door. Comparable writing cohorts run $500–$5,000.",
+                a: "Five weeks of live instruction, weekly written feedback, and a printed anthology shipped to your door. Comparable writing cohorts run $500 to $5,000.",
               },
               {
                 q: "What if I drop out?",
@@ -249,14 +347,14 @@ function Index() {
           <h2 className="label-eyebrow">About</h2>
           <p className="mt-6 text-lg leading-relaxed">
             I'm Mohammad. I write Modern Myths, an essay series about the hidden stories
-            shaping how people think and decide. I've written 211 short stories in 211
+            shaping how people think and decide. I've written 214 short stories in 214
             weeks. I built this cohort after watching too many writers I respect abandon
             novels because they'd inherited the wrong container.
           </p>
         </section>
 
         {/* FINAL CTA */}
-        <section className="mt-24 border-t border-[var(--rule)] pt-16">
+        <section id="enroll" className="mt-24 border-t border-[var(--rule)] pt-16">
           <p className="text-2xl italic leading-relaxed">
             Five weeks. Five stories. One book with your name on it.
           </p>
