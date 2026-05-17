@@ -29,8 +29,8 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-rule: var(--rule);
-  --font-serif: "EB Garamond", Georgia, serif;
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Gilda Display", Georgia, serif;
+  --font-sans: "Josefin Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
