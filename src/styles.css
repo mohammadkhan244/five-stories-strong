@@ -89,4 +89,17 @@
     text-transform: uppercase;
     color: var(--color-muted-foreground);
   }
+
+  .accent-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 150ms ease;
+  }
+  .accent-link:hover {
+    color: #C2772F;
+  }
+
+  .faq-accent svg {
+    color: #C2772F;
+  }
 }
