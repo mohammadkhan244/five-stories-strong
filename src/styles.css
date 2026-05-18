@@ -91,15 +91,27 @@
   }
 
   .accent-link {
-    color: inherit;
-    text-decoration: none;
+    color: #C2772F;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
     transition: color 150ms ease;
   }
   .accent-link:hover {
-    color: #C2772F;
+    color: #A65F22;
   }
 
   .faq-accent svg {
     color: #C2772F;
+  }
+
+  /* Prose links inside body copy */
+  .prose-links a {
+    color: #C2772F;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .prose-links a:hover {
+    color: #A65F22;
   }
 }
