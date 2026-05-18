@@ -35,26 +35,26 @@
 
 :root {
   --radius: 0.25rem;
-  --background: oklch(0.972 0.008 85);
-  --foreground: oklch(0.21 0.012 180);
-  --card: oklch(0.972 0.008 85);
-  --card-foreground: oklch(0.21 0.012 180);
-  --popover: oklch(0.972 0.008 85);
-  --popover-foreground: oklch(0.21 0.012 180);
-  --primary: oklch(0.32 0.022 165);
-  --primary-foreground: oklch(0.972 0.008 85);
-  --secondary: oklch(0.93 0.01 85);
-  --secondary-foreground: oklch(0.21 0.012 180);
-  --muted: oklch(0.93 0.01 85);
-  --muted-foreground: oklch(0.45 0.012 180);
-  --accent: oklch(0.93 0.01 85);
-  --accent-foreground: oklch(0.21 0.012 180);
+  --background: #DBCEB4;
+  --foreground: #1F1B16;
+  --card: #DBCEB4;
+  --card-foreground: #1F1B16;
+  --popover: #DBCEB4;
+  --popover-foreground: #1F1B16;
+  --primary: #1F1B16;
+  --primary-foreground: #FAF5EA;
+  --secondary: #CFC0A2;
+  --secondary-foreground: #1F1B16;
+  --muted: #CFC0A2;
+  --muted-foreground: #4A4239;
+  --accent: #C2772F;
+  --accent-foreground: #FAF5EA;
   --destructive: oklch(0.55 0.18 27);
-  --destructive-foreground: oklch(0.972 0.008 85);
-  --border: oklch(0.86 0.012 85);
-  --input: oklch(0.86 0.012 85);
-  --ring: oklch(0.32 0.022 165);
-  --rule: oklch(0.82 0.014 85);
+  --destructive-foreground: #FAF5EA;
+  --border: #B8A87E;
+  --input: #B8A87E;
+  --ring: #C2772F;
+  --rule: #B8A87E;
 }
 
 @layer base {
@@ -91,15 +91,27 @@
   }
 
   .accent-link {
-    color: inherit;
-    text-decoration: none;
+    color: #C2772F;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
     transition: color 150ms ease;
   }
   .accent-link:hover {
-    color: #C2772F;
+    color: #A65F22;
   }
 
   .faq-accent svg {
     color: #C2772F;
+  }
+
+  /* Prose links inside body copy */
+  .prose-links a {
+    color: #C2772F;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .prose-links a:hover {
+    color: #A65F22;
   }
 }
