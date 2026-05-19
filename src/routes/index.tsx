@@ -393,7 +393,10 @@ function Index() {
           <p className="text-2xl leading-relaxed">
             Five weeks. Five stories. One book with your name on it.
           </p>
-          <div className="mt-10">
+          <p className="mt-12 text-base sm:text-lg italic leading-relaxed">
+            This isn't for anyone looking for shortcuts, templates, or a guaranteed path to publishing.
+          </p>
+          <div className="mt-12">
             <CTA />
             <p className="mt-4 font-sans text-sm font-light">
               Enrollment closes Sunday May 31 · Capped at 10 · Starts June 2
