@@ -319,40 +319,6 @@ function Index() {
 
         <Divider />
 
-        {/* IS THIS FOR YOU */}
-        <section>
-          <h2
-            className="font-sans text-sm font-medium"
-            style={{ fontVariant: "small-caps", letterSpacing: "0.18em" }}
-          >
-            Is this for you?
-          </h2>
-          <ul className="mt-10 space-y-10">
-            {[
-              "You've been \"working on a novel\" for over a year and the file's gone quiet.\n\nIt’s not your fault.\n\nYou are a writer, just that the starting point was wrong.\nKeep writing.",
-              "You've never written fiction but keep thinking you should.\n\nFour of the five who finished last year hadn't written a story before they enrolled.",
-              "You consume constantly and none of it seems to land.\n\nThat's the thing the cohort is for.",
-            ].map((text, i) => (
-              <li key={i} className="flex gap-5">
-                <span
-                  aria-hidden
-                  className="pt-1 font-sans text-lg leading-none"
-                  style={{ color: ACCENT }}
-                >
-                  //
-                </span>
-                <p className="flex-1 text-lg leading-relaxed whitespace-pre-line">{text}</p>
-              </li>
-            ))}
-          </ul>
-          <hr className="my-10 border-0 h-px" style={{ backgroundColor: RULE }} />
-          <p className="text-base italic leading-relaxed">
-            This isn't for anyone looking for shortcuts, templates, or a guaranteed path to publishing.
-          </p>
-        </section>
-
-        <Divider />
-
         {/* FAQ */}
         <section id="faq">
           <h2 className="text-3xl leading-tight tracking-tight font-normal">
