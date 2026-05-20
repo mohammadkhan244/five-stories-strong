@@ -91,14 +91,14 @@
   }
 
   .accent-link {
-    color: #C2772F;
+    color: #8A4F18;
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-thickness: 1px;
     transition: color 150ms ease;
   }
   .accent-link:hover {
-    color: #A65F22;
+    color: #5E3610;
   }
 
   .faq-accent svg {
