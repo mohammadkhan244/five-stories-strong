@@ -195,6 +195,65 @@ function Index() {
 
         <Divider />
 
+        {/* WHERE TO GO INSTEAD */}
+        <section>
+          <h2 className="text-3xl leading-tight tracking-tight font-normal">
+            This might not be for you. If so, here's where I'd send you.
+          </h2>
+          <div className="mt-8 space-y-6 text-lg leading-relaxed">
+            <p>
+              If you want the closest thing to an MFA workshop without the MFA, go to{" "}
+              <a
+                href="https://www.writerstudio.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="accent-link"
+              >
+                The Writers Studio
+              </a>
+              . Philip Schultz built it in 1987 and their method — borrowing voices to find your own — is genuinely deep. Ten weeks, a written critique on your work every single week. If you want to be taught, rigorously, over a real arc, they're spectacular at it. The tradeoff is time and commitment: it's a long, serious haul, and you finish with sharper craft, not a finished body of work.
+            </p>
+            <p>
+              If you want a broad foundation from a name you can trust, go to{" "}
+              <a
+                href="https://www.writingclasses.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="accent-link"
+              >
+                Gotham Writers
+              </a>
+              . Their Fiction I has given thousands of people their first real grounding in how fiction actually works. It's the best generalist on-ramp there is. The tradeoff is that it's a generalist on-ramp — bigger groups, fundamentals, one or two stories, no artifact at the end.
+            </p>
+            <p>
+              If you want prestige and you're willing to earn your spot, apply to the{" "}
+              <a
+                href="https://kenyonreview.org/event/summer-online-writers-workshops/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="accent-link"
+              >
+                Kenyon Review
+              </a>{" "}
+              workshop. It's one of the best weeks of literary instruction in the country, taught by people whose names are in Best American. The tradeoff is obvious: you have to apply and be selected, it's one intensive week, and it costs accordingly.
+            </p>
+            <p>
+              I mean all of that. Those are great programs. I'd send the right person to any of them tomorrow.
+            </p>
+          </div>
+
+          <p className="my-16 text-xl sm:text-2xl leading-relaxed">
+            Here's the only thing none of them do. You walk out of all three a better writer. You walk out of none of them holding a book with five of your finished stories in it and your name on the cover.
+          </p>
+
+          <p className="text-lg leading-relaxed">
+            That's not better or worse. It's a different promise. They make you sharper. This makes you finished. If sharper is what you need, go — genuinely, go. If you're tired of being someone who hasn't finished anything, stay.
+          </p>
+        </section>
+
+        <Divider />
+
+
         {/* TESTIMONIALS */}
         <section id="testimonials">
           <h2 className="text-3xl leading-tight tracking-tight font-normal">
