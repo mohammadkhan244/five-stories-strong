@@ -183,7 +183,7 @@ function Index() {
               <li key={i} className="flex gap-6">
                 <span
                   className="font-sans text-xs pt-2 tabular-nums tracking-wider font-light"
-                  style={{ color: ACCENT, fontVariant: "small-caps" }}
+                  style={{ color: "#8A4F18", fontVariant: "small-caps" }}
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
