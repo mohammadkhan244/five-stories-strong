@@ -309,7 +309,7 @@ function Index() {
         <section>
           <dl className="space-y-5">
             {[
-              ["Dates", "June 2 – early July (5 weeks)"],
+              ["Dates", "June 6 – early July (5 weeks)"],
               [
                 "Time",
                 "Every Saturday, 1-2pm EST.\nOffice Hours: Every Wednesday 7-8pm EST",
