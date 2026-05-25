@@ -130,7 +130,7 @@ function Index() {
           <div className="mt-12">
             <CTA />
             <p className="mt-4 font-sans text-sm font-light">
-              Enrollment closes Sunday May 31 · Capped at 10 · Starts June 2
+              Enrollment closes Sunday May 31 · Capped at 10 · Starts June 6
             </p>
           </div>
         </section>
@@ -309,7 +309,7 @@ function Index() {
         <section>
           <dl className="space-y-5">
             {[
-              ["Dates", "June 2 – early July (5 weeks)"],
+              ["Dates", "June 6 – early July (5 weeks)"],
               [
                 "Time",
                 "Every Saturday, 1-2pm EST.\nOffice Hours: Every Wednesday 7-8pm EST",
@@ -458,7 +458,7 @@ function Index() {
           <div className="mt-12">
             <CTA />
             <p className="mt-4 font-sans text-sm font-light">
-              Enrollment closes Sunday May 31 · Capped at 10 · Starts June 2
+              Enrollment closes Sunday May 31 · Capped at 10 · Starts June 6
             </p>
           </div>
         </section>
