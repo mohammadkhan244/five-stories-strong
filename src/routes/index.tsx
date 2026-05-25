@@ -130,7 +130,7 @@ function Index() {
           <div className="mt-12">
             <CTA />
             <p className="mt-4 font-sans text-sm font-light">
-              Enrollment closes Sunday May 31 · Capped at 10 · Starts June 2
+              Enrollment closes Sunday May 31 · Capped at 10 · Starts June 6
             </p>
           </div>
         </section>
@@ -458,7 +458,7 @@ function Index() {
           <div className="mt-12">
             <CTA />
             <p className="mt-4 font-sans text-sm font-light">
-              Enrollment closes Sunday May 31 · Capped at 10 · Starts June 2
+              Enrollment closes Sunday May 31 · Capped at 10 · Starts June 6
             </p>
           </div>
         </section>
