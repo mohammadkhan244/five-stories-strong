@@ -123,7 +123,7 @@ function Index() {
               lineHeight: 1.3,
             }}
           >
-            For people who consume more than they create
+            For the writer who doesn't have 60 hours a week for a novel
           </p>
           <p
             className="mt-2 font-sans"
