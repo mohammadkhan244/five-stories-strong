@@ -112,7 +112,32 @@ function Index() {
 
         {/* HERO */}
         <section className="mt-16">
-          <p className="label-eyebrow" style={{ color: "#1F1B16" }}>A 5-week cohort</p>
+          <p
+            className="font-sans"
+            style={{
+              color: "#1F1B16",
+              fontVariant: "small-caps",
+              letterSpacing: "0.18em",
+              fontWeight: 500,
+              fontSize: "0.95rem",
+              lineHeight: 1.3,
+            }}
+          >
+            For people who consume more than they create
+          </p>
+          <p
+            className="mt-2 font-sans"
+            style={{
+              color: "#1F1B16",
+              fontVariant: "small-caps",
+              letterSpacing: "0.14em",
+              fontWeight: 300,
+              fontSize: "0.75rem",
+              opacity: 0.75,
+            }}
+          >
+            A 5-week cohort
+          </p>
           <h1 className="mt-6 text-[2.5rem] sm:text-5xl leading-[1.1] tracking-tight font-normal">
             Five Stories in Five Weeks
           </h1>
