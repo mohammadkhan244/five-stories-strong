@@ -36,6 +36,27 @@ export const Route = createFileRoute("/")({
 const STRIPE_URL = "https://buy.stripe.com/3cIbJ13Eo4S80wO8Gt4wM05";
 const ACCENT = "#C2772F";
 const RULE = "#B8A87E";
+const KRAFT_BASE = "#DBCEB4";
+const KRAFT_MID = "#D4C5A6";
+const KRAFT_DEEP = "#CFBE9C";
+
+function Band({
+  bg,
+  children,
+  className = "",
+  id,
+}: {
+  bg: string;
+  children: React.ReactNode;
+  className?: string;
+  id?: string;
+}) {
+  return (
+    <div id={id} style={{ backgroundColor: bg }} className={className}>
+      <div className="mx-auto w-full max-w-[680px] px-6">{children}</div>
+    </div>
+  );
+}
 
 function Mark() {
   return (
