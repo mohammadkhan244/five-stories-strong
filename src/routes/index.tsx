@@ -160,9 +160,15 @@ function Index() {
               A 5-week cohort
             </p>
             <h1 className="mt-6 text-[2.5rem] sm:text-5xl leading-[1.1] tracking-tight font-normal">
-              Five Stories in Five Weeks
+              Write Five Stories in Five Weeks
             </h1>
             <div className="mt-6 h-px w-[60px]" style={{ backgroundColor: ACCENT }} />
+
+            <p className="mt-8 font-serif italic text-xl sm:text-2xl leading-snug">
+              A printed anthology of your work in five weeks. Your name on the cover.
+            </p>
+
+
 
             <div className="mt-10 space-y-6 text-lg leading-relaxed">
               <p>
