@@ -291,6 +291,18 @@ function Index() {
                 workshop. It's one of the best weeks of literary instruction in the country, taught by people whose names are in Best American. The tradeoff is obvious: you have to apply and be selected, it's one intensive week, and it costs accordingly.
               </p>
               <p>
+                If you want to test yourself under fire and you don't need a teacher in the room, enter{" "}
+                <a
+                  href="https://www.nycmidnight.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="accent-link"
+                >
+                  NYC Midnight
+                </a>
+                . They run challenges all year — 100 words in 24 hours, 250 in 48, up to 2,000-word stories in eight days. Every writer gets a genre, an object, and an action drawn at random — yes, the same forcing function we use in the cohort, just with a deadline and a leaderboard instead of a room and an instructor. Judges give feedback on every submission, 32,000+ writers compete worldwide, and there's a real forum community where people review each other's work. The tradeoff is scale: it's a stadium, not a kitchen. No live instruction, no five-week arc, no anthology — just you, the prompt, the clock, and a vast peer community to swim through.
+              </p>
+              <p>
                 I mean all of that. Those are great programs. I'd send the right person to any of them tomorrow.
               </p>
             </div>
