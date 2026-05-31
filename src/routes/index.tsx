@@ -182,7 +182,7 @@ function Index() {
             <div className="mt-12">
               <CTA />
               <p className="mt-4 font-sans text-sm font-light">
-                Enrollment closes Sunday May 31 · Capped at 10 · Starts June 6
+                Enrollment open · Capped at 10 · Starts Saturday, August 1
               </p>
             </div>
           </section>
@@ -370,7 +370,7 @@ function Index() {
           <section>
             <dl className="space-y-5">
               {[
-                ["Dates", "June 6 – early July (5 weeks)"],
+                ["Dates", "August 1 – August 29, 2026 (5 weeks)"],
                 [
                   "Time",
                   "Every Saturday, 1-2pm EST.\nOffice Hours: Every Wednesday 7-8pm EST",
@@ -382,7 +382,7 @@ function Index() {
                   "Live instruction, weekly written feedback on submitted work, printed anthology shipped to your door",
                 ],
                 ["Price", "$600"],
-                ["Enrollment closes", "Sunday May 31"],
+                ["Enrollment closes", "Until all 10 seats are filled"],
               ].map(([label, value]) => (
                 <div
                   key={label}
@@ -519,7 +519,7 @@ function Index() {
             <div className="mt-12">
               <CTA />
               <p className="mt-4 font-sans text-sm font-light">
-                Enrollment closes Sunday May 31 · Capped at 10 · Starts June 6
+                Enrollment open · Capped at 10 · Starts Saturday, August 1
               </p>
             </div>
           </section>
