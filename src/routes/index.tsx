@@ -251,69 +251,66 @@ function Index() {
         <Band bg={KRAFT_MID} className="py-20 sm:py-24">
           <section>
             <h2 className="text-3xl leading-tight tracking-tight font-normal">
-              This might not be for you. If so, here's where I'd send you.
+              This might not be for you.
             </h2>
+            <h3 className="mt-4 text-2xl italic font-normal leading-tight">
+              If it isn't, here's where I'd send you.
+            </h3>
             <div className="mt-8 space-y-6 text-lg leading-relaxed">
               <p>
-                If you want the closest thing to an MFA workshop without the MFA, go to{" "}
                 <a
                   href="https://www.writerstudio.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="accent-link"
+                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
-                  The Writers Studio
-                </a>
-                . Philip Schultz built it in 1987 and their method — borrowing voices to find your own — is genuinely deep. Ten weeks, a written critique on your work every single week. If you want to be taught, rigorously, over a real arc, they're spectacular at it. The tradeoff is time and commitment: it's a long, serious haul, and you finish with sharper craft, not a finished body of work.
+                  <strong>The Writers Studio</strong>
+                </a>{" "}
+                is the closest thing to an MFA workshop without the MFA. Philip Schultz built it in 1987. Ten weeks. Written critique every single week. They teach by having you borrow other writers' voices until you find your own, and that method works. You finish sharper. You don't finish a body of work.
               </p>
               <p>
-                If you want a broad foundation from a name you can trust, go to{" "}
                 <a
                   href="https://www.writingclasses.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="accent-link"
+                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
-                  Gotham Writers
-                </a>
-                . Their Fiction I has given thousands of people their first real grounding in how fiction actually works. It's the best generalist on-ramp there is. The tradeoff is that it's a generalist on-ramp — bigger groups, fundamentals, one or two stories, no artifact at the end.
+                  <strong>Gotham Writers</strong>
+                </a>{" "}
+                is the broadest on-ramp. Their Fiction I has given thousands of people their first real grounding in how stories actually function. If you've never been taught fiction before, this is a safe place to start. Bigger groups. Fundamentals. One or two stories. No book at the end.
               </p>
               <p>
-                If you want prestige and you're willing to earn your spot, apply to the{" "}
                 <a
                   href="https://kenyonreview.org/event/summer-online-writers-workshops/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="accent-link"
+                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
-                  Kenyon Review
+                  <strong>Kenyon Review</strong>
                 </a>{" "}
-                workshop. It's one of the best weeks of literary instruction in the country, taught by people whose names are in Best American. The tradeoff is obvious: you have to apply and be selected, it's one intensive week, and it costs accordingly.
+                is the prestige play. One of the best weeks of literary instruction in the country, taught by writers whose names show up in Best American. You have to apply. You have to get in. You pay accordingly.
               </p>
               <p>
-                If you want to test yourself under fire and you don't need a teacher in the room, enter{" "}
                 <a
                   href="https://www.nycmidnight.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="accent-link"
+                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
-                  NYC Midnight
-                </a>
-                . They run challenges all year — 100 words in 24 hours, 250 in 48, up to 2,000-word stories in eight days. Every writer gets a genre, an object, and an action drawn at random — yes, the same forcing function we use in the cohort, just with a deadline and a leaderboard instead of a room and an instructor. Judges give feedback on every submission, 32,000+ writers compete worldwide, and there's a real forum community where people review each other's work. The tradeoff is scale: it's a stadium, not a kitchen. No live instruction, no five-week arc, no anthology — just you, the prompt, the clock, and a vast peer community to swim through.
+                  <strong>NYC Midnight</strong>
+                </a>{" "}
+                runs multiple challenges a year. 100 words in 24 hours, 250 in 48, all the way up to 2,000-word stories in eight days. Every writer draws a genre, an object, an action. Same forcing function we use in here. Just no room, no instructor, and 32,000 writers in a forum doing it alongside you.
               </p>
-              <p>
-                I mean all of that. Those are great programs. I'd send the right person to any of them tomorrow.
-              </p>
+              <p>These are awesome programs and are worthwhile if that's what you're looking for.</p>
             </div>
 
-            <p className="my-16 text-xl sm:text-2xl leading-relaxed">
-              Here's the only thing none of them do. You walk out of all three a better writer. You walk out of none of them holding a book with five of your finished stories in it and your name on the cover.
-            </p>
-
-            <p className="text-lg leading-relaxed">
-              That's not better or worse. It's a different promise. They make you sharper. This makes you finished. If sharper is what you need, go — genuinely, go. If you're tired of being someone who hasn't finished anything, stay.
-            </p>
+            <div className="mt-16 space-y-6 text-lg leading-relaxed">
+              <p>Here's what none of them do.</p>
+              <p>You walk out of all four a better writer. You walk out of none of them holding a book with five of your finished stories in it and your name on the cover.</p>
+              <p>They make you sharper. An anthology makes you finished.</p>
+              <p>If sharper is what you need, try those courses.</p>
+              <p>If you're tired of being someone who hasn't finished anything, stay.</p>
+            </div>
           </section>
         </Band>
 
