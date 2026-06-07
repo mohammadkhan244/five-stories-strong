@@ -91,8 +91,6 @@ function StickyNav() {
         <div className="hidden sm:flex items-center gap-6 font-sans text-xs tracking-wide font-light">
           <a href="#how-it-works" className="hover:opacity-70 transition-opacity">How it works</a>
           <span aria-hidden>·</span>
-          <a href="#testimonials" className="hover:opacity-70 transition-opacity">Testimonials</a>
-          <span aria-hidden>·</span>
           <a href="#faq" className="hover:opacity-70 transition-opacity">FAQ</a>
           <span aria-hidden>·</span>
           <a href="#enroll" className="hover:opacity-70 transition-opacity">Enroll</a>
@@ -310,18 +308,7 @@ function Index() {
               <p>They make you sharper. An anthology makes you finished.</p>
               <p>If sharper is what you need, try those courses.</p>
               <p>If you're tired of being someone who hasn't finished anything, stay.</p>
-            </div>
-          </section>
-        </Band>
-
-        {/* BAND 5: TESTIMONIALS — Base */}
-        <Band bg={KRAFT_BASE} className="py-20 sm:py-24">
-          <section id="testimonials">
-            <h2 className="text-3xl leading-tight tracking-tight font-normal">
-              Here’s what past students have said
-            </h2>
-            <div className="mt-12 space-y-16">
-              <figure>
+              <figure className="pt-10">
                 <blockquote className="text-xl italic leading-relaxed">
                   "Most fiction cohorts rehash old stuff I've seen before. But this had material I've never seen. I looked forward to Saturday."
                 </blockquote>
@@ -331,34 +318,11 @@ function Index() {
                     href="https://substack.com/@theoriginaljohnthewordsmith"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="accent-link"
+                    style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
                   >
-                    John Cook, 30-year writing veteran, currently publishing his own novel
+                    John Cook
                   </a>
-                </figcaption>
-              </figure>
-              <figure>
-                <blockquote className="text-xl italic leading-relaxed">
-                  "You'll walk away feeling like you want to write every single day."
-                </blockquote>
-                <figcaption className="mt-4 font-sans text-sm font-light">
-                  — Julie Howard
-                </figcaption>
-              </figure>
-              <figure>
-                <blockquote className="text-xl italic leading-relaxed">
-                  "One example of what I do differently now is I think about the transformation. Without transformation, a story always falls flat."
-                </blockquote>
-                <figcaption className="mt-4 font-sans text-sm font-light">
-                  —{" "}
-                  <a
-                    href="https://www.themoneymindsetlab.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="accent-link"
-                  >
-                    Ceres Chua, finance creator
-                  </a>
+                  , 30-year writing veteran, currently publishing his own novel
                 </figcaption>
               </figure>
             </div>
@@ -418,6 +382,14 @@ function Index() {
                 <br />
                 Fiction is how you metabolize what you learn.
               </p>
+              <figure className="py-6">
+                <blockquote className="text-xl italic leading-relaxed">
+                  "You'll walk away feeling like you want to write every single day."
+                </blockquote>
+                <figcaption className="mt-4 font-sans text-sm font-light">
+                  — Julie Howard
+                </figcaption>
+              </figure>
               <p>
                 And it’s involuntary. You don’t get to decide how it happens, it just does. It’s why people cry at books and feel embarrassed about it. They didn’t choose to get impacted this way.
               </p>
@@ -510,6 +482,23 @@ function Index() {
             className="border-t pt-16 text-center"
             style={{ borderColor: RULE }}
           >
+            <figure className="text-left pb-12">
+              <blockquote className="text-xl italic leading-relaxed">
+                "One example of what I do differently now is I think about the transformation. Without transformation, a story always falls flat."
+              </blockquote>
+              <figcaption className="mt-4 font-sans text-sm font-light">
+                —{" "}
+                <a
+                  href="https://www.themoneymindsetlab.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                >
+                  Ceres Chua
+                </a>
+                , finance creator
+              </figcaption>
+            </figure>
             <p className="text-2xl leading-relaxed">
               Five weeks. Five stories. One book with your name on it.
             </p>
