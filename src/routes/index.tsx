@@ -402,6 +402,23 @@ function Index() {
               <p>
                 A way to process what’s in your head in a way other writing styles cannot.
               </p>
+              <figure className="pt-10">
+                <blockquote className="text-xl italic leading-relaxed">
+                  "One example of what I do differently now is I think about the transformation. Without transformation, a story always falls flat."
+                </blockquote>
+                <figcaption className="mt-4 font-sans text-sm font-light">
+                  —{" "}
+                  <a
+                    href="https://www.themoneymindsetlab.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                  >
+                    Ceres Chua
+                  </a>
+                  , finance creator
+                </figcaption>
+              </figure>
             </section>
           </div>
         </Band>
@@ -479,23 +496,6 @@ function Index() {
             className="border-t pt-16 text-center"
             style={{ borderColor: RULE }}
           >
-            <figure className="text-left pb-12">
-              <blockquote className="text-xl italic leading-relaxed">
-                "One example of what I do differently now is I think about the transformation. Without transformation, a story always falls flat."
-              </blockquote>
-              <figcaption className="mt-4 font-sans text-sm font-light">
-                —{" "}
-                <a
-                  href="https://www.themoneymindsetlab.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
-                >
-                  Ceres Chua
-                </a>
-                , finance creator
-              </figcaption>
-            </figure>
             <p className="text-2xl leading-relaxed">
               Five weeks. Five stories. One book with your name on it.
             </p>
