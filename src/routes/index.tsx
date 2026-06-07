@@ -249,11 +249,8 @@ function Index() {
         <Band bg={KRAFT_MID} className="py-20 sm:py-24">
           <section>
             <h2 className="text-3xl leading-tight tracking-tight font-normal">
-              This might not be for you.
+              Don't Buy This Yet. Read This First.
             </h2>
-            <h3 className="mt-4 text-2xl italic font-normal leading-tight">
-              If it isn't, here's where I'd send you.
-            </h3>
             <div className="mt-8 space-y-6 text-lg leading-relaxed">
               <p>
                 <a
@@ -413,7 +410,7 @@ function Index() {
         <Band bg={KRAFT_BASE} className="py-20 sm:py-24">
           <section id="faq">
             <h2 className="text-3xl leading-tight tracking-tight font-normal">
-              Questions
+              Read These Before You Hesitate.
             </h2>
             <Accordion type="single" collapsible className="mt-8 faq-accent">
               {[
