@@ -382,6 +382,14 @@ function Index() {
                 <br />
                 Fiction is how you metabolize what you learn.
               </p>
+              <figure className="py-6">
+                <blockquote className="text-xl italic leading-relaxed">
+                  "You'll walk away feeling like you want to write every single day."
+                </blockquote>
+                <figcaption className="mt-4 font-sans text-sm font-light">
+                  — Julie Howard
+                </figcaption>
+              </figure>
               <p>
                 And it’s involuntary. You don’t get to decide how it happens, it just does. It’s why people cry at books and feel embarrassed about it. They didn’t choose to get impacted this way.
               </p>
