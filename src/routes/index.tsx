@@ -250,7 +250,7 @@ function Index() {
         <Band bg={KRAFT_MID} className="py-20 sm:py-24">
           <section>
             <h2 className="text-3xl leading-tight tracking-tight font-normal">
-              Don't Buy This Yet. Read This First.
+              Don't Buy Yet. Read This First.
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed">
               <p>
