@@ -91,14 +91,17 @@
   }
 
   .accent-link {
-    color: #8A4F18;
+    color: #8B4513;
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-thickness: 1px;
     transition: color 150ms ease;
   }
   .accent-link:hover {
-    color: #5E3610;
+    color: #5C2E0A;
+  }
+  .accent-link:visited {
+    color: #8B4513;
   }
 
   .faq-accent svg {
@@ -107,11 +110,14 @@
 
   /* Prose links inside body copy */
   .prose-links a {
-    color: #C2772F;
+    color: #8B4513;
     text-decoration: underline;
     text-underline-offset: 3px;
   }
   .prose-links a:hover {
-    color: #A65F22;
+    color: #5C2E0A;
+  }
+  .prose-links a:visited {
+    color: #8B4513;
   }
 }

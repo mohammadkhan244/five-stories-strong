@@ -35,6 +35,7 @@ export const Route = createFileRoute("/")({
 
 const STRIPE_URL = "https://buy.stripe.com/3cIbJ13Eo4S80wO8Gt4wM05";
 const ACCENT = "#C2772F";
+const LINK = "#8B4513";
 const RULE = "#B8A87E";
 const KRAFT_BASE = "#DBCEB4";
 const KRAFT_MID = "#D4C5A6";
@@ -89,11 +90,11 @@ function StickyNav() {
           <span>Modern Myths</span>
         </a>
         <div className="hidden sm:flex items-center gap-6 font-sans text-xs tracking-wide font-light">
-          <a href="#how-it-works" className="hover:opacity-70 transition-opacity">How it works</a>
+          <a href="#how-it-works" style={{ color: LINK }} className="hover:opacity-70 transition-opacity">How it works</a>
           <span aria-hidden>·</span>
-          <a href="#faq" className="hover:opacity-70 transition-opacity">FAQ</a>
+          <a href="#faq" style={{ color: LINK }} className="hover:opacity-70 transition-opacity">FAQ</a>
           <span aria-hidden>·</span>
-          <a href="#enroll" className="hover:opacity-70 transition-opacity">Enroll</a>
+          <a href="#enroll" style={{ color: LINK }} className="hover:opacity-70 transition-opacity">Enroll</a>
         </div>
       </div>
     </nav>
@@ -249,7 +250,7 @@ function Index() {
         <Band bg={KRAFT_MID} className="py-20 sm:py-24">
           <section>
             <h2 className="text-3xl leading-tight tracking-tight font-normal">
-              Don't Buy This Yet. Read This First.
+              Don't Buy Yet. Read This First.
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed">
               <p>
@@ -257,7 +258,7 @@ function Index() {
                   href="https://www.writerstudio.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                  style={{ color: LINK, textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
                   <strong>The Writers Studio</strong>
                 </a>{" "}
@@ -268,7 +269,7 @@ function Index() {
                   href="https://www.writingclasses.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                  style={{ color: LINK, textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
                   <strong>Gotham Writers</strong>
                 </a>{" "}
@@ -279,7 +280,7 @@ function Index() {
                   href="https://kenyonreview.org/event/summer-online-writers-workshops/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                  style={{ color: LINK, textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
                   <strong>Kenyon Review</strong>
                 </a>{" "}
@@ -290,7 +291,7 @@ function Index() {
                   href="https://www.nycmidnight.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                  style={{ color: LINK, textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
                   <strong>NYC Midnight</strong>
                 </a>{" "}
@@ -315,7 +316,7 @@ function Index() {
                     href="https://substack.com/@theoriginaljohnthewordsmith"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                    style={{ color: LINK, textDecoration: "underline", textUnderlineOffset: "3px" }}
                   >
                     John Cook
                   </a>
@@ -412,7 +413,7 @@ function Index() {
                     href="https://www.themoneymindsetlab.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                    style={{ color: LINK, textDecoration: "underline", textUnderlineOffset: "3px" }}
                   >
                     Ceres Chua
                   </a>
