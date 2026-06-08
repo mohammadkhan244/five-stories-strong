@@ -257,7 +257,7 @@ function Index() {
                   href="https://www.writerstudio.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                  style={{ color: LINK, textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
                   <strong>The Writers Studio</strong>
                 </a>{" "}
@@ -268,7 +268,7 @@ function Index() {
                   href="https://www.writingclasses.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                  style={{ color: LINK, textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
                   <strong>Gotham Writers</strong>
                 </a>{" "}
@@ -279,7 +279,7 @@ function Index() {
                   href="https://kenyonreview.org/event/summer-online-writers-workshops/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                  style={{ color: LINK, textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
                   <strong>Kenyon Review</strong>
                 </a>{" "}
@@ -290,7 +290,7 @@ function Index() {
                   href="https://www.nycmidnight.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                  style={{ color: LINK, textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
                   <strong>NYC Midnight</strong>
                 </a>{" "}
@@ -315,7 +315,7 @@ function Index() {
                     href="https://substack.com/@theoriginaljohnthewordsmith"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                    style={{ color: LINK, textDecoration: "underline", textUnderlineOffset: "3px" }}
                   >
                     John Cook
                   </a>
@@ -412,7 +412,7 @@ function Index() {
                     href="https://www.themoneymindsetlab.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: ACCENT, textDecoration: "underline", textUnderlineOffset: "3px" }}
+                    style={{ color: LINK, textDecoration: "underline", textUnderlineOffset: "3px" }}
                   >
                     Ceres Chua
                   </a>
