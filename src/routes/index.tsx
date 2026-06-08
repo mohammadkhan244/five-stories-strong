@@ -35,6 +35,7 @@ export const Route = createFileRoute("/")({
 
 const STRIPE_URL = "https://buy.stripe.com/3cIbJ13Eo4S80wO8Gt4wM05";
 const ACCENT = "#C2772F";
+const LINK = "#8B4513";
 const RULE = "#B8A87E";
 const KRAFT_BASE = "#DBCEB4";
 const KRAFT_MID = "#D4C5A6";
