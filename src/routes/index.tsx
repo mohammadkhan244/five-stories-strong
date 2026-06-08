@@ -90,11 +90,11 @@ function StickyNav() {
           <span>Modern Myths</span>
         </a>
         <div className="hidden sm:flex items-center gap-6 font-sans text-xs tracking-wide font-light">
-          <a href="#how-it-works" className="hover:opacity-70 transition-opacity">How it works</a>
+          <a href="#how-it-works" style={{ color: LINK }} className="hover:opacity-70 transition-opacity">How it works</a>
           <span aria-hidden>·</span>
-          <a href="#faq" className="hover:opacity-70 transition-opacity">FAQ</a>
+          <a href="#faq" style={{ color: LINK }} className="hover:opacity-70 transition-opacity">FAQ</a>
           <span aria-hidden>·</span>
-          <a href="#enroll" className="hover:opacity-70 transition-opacity">Enroll</a>
+          <a href="#enroll" style={{ color: LINK }} className="hover:opacity-70 transition-opacity">Enroll</a>
         </div>
       </div>
     </nav>
