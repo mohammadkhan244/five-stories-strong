@@ -143,7 +143,7 @@ function Index() {
                 lineHeight: 1.3,
               }}
             >
-              For the writer who doesn't have 60 hours a week for a novel
+              For writers who stopped trusting their own thinking.
             </p>
             <p
               className="mt-2 font-sans"
