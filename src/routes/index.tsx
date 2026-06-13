@@ -159,7 +159,7 @@ function Index() {
               A 5-week cohort
             </p>
             <h1 className="mt-6 text-[2.5rem] sm:text-5xl leading-[1.1] tracking-tight font-normal">
-              Write Five Stories in Five Weeks
+              Write Five Stories<br />in Five Weeks
             </h1>
             <div className="mt-6 h-px w-[60px]" style={{ backgroundColor: ACCENT }} />
 
@@ -250,7 +250,7 @@ function Index() {
         <Band bg={KRAFT_MID} className="py-20 sm:py-24">
           <section>
             <h2 className="text-3xl leading-tight tracking-tight font-normal">
-              Don't Buy Yet. Read This First.
+              Don't buy. Instead, read this:
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed">
               <p>
@@ -362,7 +362,7 @@ function Index() {
         {/* BAND 7: THE TURN — Deep */}
         <Band bg={KRAFT_DEEP} className="pt-40 sm:pt-56 pb-20 sm:pb-24">
           <div className="pt-20 border-t" style={{ borderColor: RULE }}>
-            <section className="space-y-7 text-[1.15rem] sm:text-xl leading-[1.75]">
+            <section className="space-y-10 text-[1.15rem] sm:text-xl leading-[1.75]">
               <p>
                 So you’ve read this far, and you probably feel like you understand what this is now.
               </p>
@@ -428,7 +428,7 @@ function Index() {
         <Band bg={KRAFT_BASE} className="py-20 sm:py-24">
           <section id="faq">
             <h2 className="text-3xl leading-tight tracking-tight font-normal">
-              Read These Before You Hesitate.
+              Read These Before You Hesitate
             </h2>
             <Accordion type="single" collapsible className="mt-8 faq-accent">
               {[
