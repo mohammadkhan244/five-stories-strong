@@ -164,7 +164,7 @@ function Index() {
             <div className="mt-6 h-px w-[60px]" style={{ backgroundColor: ACCENT }} />
 
             <p className="mt-8 font-serif italic text-xl sm:text-2xl leading-snug">
-              A printed anthology of your work in five weeks. Your name on the cover.
+              A printed anthology of your work in five weeks. Living proof that what you think is worth saying.
             </p>
 
 
