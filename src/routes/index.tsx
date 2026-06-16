@@ -226,7 +226,7 @@ function Index() {
             </h2>
             <ol className="mt-10 space-y-10">
               {[
-                "Each session opens with a 15-minute random writing exercise. Like three objects, one genre, drawn at random. You can't pre-plan a story about a kettle, a stolen watch, and a foghorn in horror. So you don't plan. You write.",
+                "Each episode opens with a 15-minute random writing exercise. Like three objects, one genre, drawn at random. You can't pre-plan a story about a kettle, a stolen watch, and a foghorn in horror. So you don't plan. You write.",
                 "Then we study the craft so you can already spot it in the draft you just wrote. Practice first, theory second.",
                 "You submit one finished story a week. I read every one. And give feedback..",
                 "Week 5: your five stories become a printed anthology. Your name on the cover. Shipped to your door.",
