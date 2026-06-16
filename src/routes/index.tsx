@@ -130,7 +130,7 @@ function Index() {
             </span>
           </p>
 
-          <section className="mt-16">
+          <section className="mt-6 sm:mt-8">
             <p
               className="font-sans"
               style={{
