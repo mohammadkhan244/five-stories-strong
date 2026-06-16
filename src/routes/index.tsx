@@ -120,8 +120,7 @@ function Divider() {
 function Index() {
   return (
     <div id="top" className="min-h-screen text-foreground" style={{ backgroundColor: KRAFT_BASE }}>
-      <StickyNav />
-      <main className="pt-20 sm:pt-28">
+      <main className="pt-6 sm:pt-8">
         {/* BAND 1: TOP BAR + HERO + SOCIAL PROOF — Base */}
         <Band bg={KRAFT_BASE}>
           <p className="flex items-center gap-2 font-sans text-xs tracking-wide font-light">
