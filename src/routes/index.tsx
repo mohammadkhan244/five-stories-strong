@@ -440,8 +440,8 @@ function Index() {
                   a: "Yes. The genre each week is whatever you draw. Romantasy, horror, literary, poetry, business fiction — the craft applies across all of them. Write what you want to write.",
                 },
                 {
-                  q: "What if I miss a session?",
-                  a: "Every session is recorded. Submitted work gets feedback regardless of attendance, and there are weekly office hours.",
+                  q: "What if I miss an episode?",
+                  a: "Every episode is recorded. Submitted work gets feedback regardless of attendance, and there are weekly office hours.",
                 },
                 {
                   q: "Is this for people who want to publish?",
