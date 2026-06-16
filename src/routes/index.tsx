@@ -120,8 +120,7 @@ function Divider() {
 function Index() {
   return (
     <div id="top" className="min-h-screen text-foreground" style={{ backgroundColor: KRAFT_BASE }}>
-      <StickyNav />
-      <main className="pt-20 sm:pt-28">
+      <main className="pt-6 sm:pt-8">
         {/* BAND 1: TOP BAR + HERO + SOCIAL PROOF — Base */}
         <Band bg={KRAFT_BASE}>
           <p className="flex items-center gap-2 font-sans text-xs tracking-wide font-light">
@@ -227,7 +226,7 @@ function Index() {
             </h2>
             <ol className="mt-10 space-y-10">
               {[
-                "Each session opens with a 15-minute random writing exercise. Like three objects, one genre, drawn at random. You can't pre-plan a story about a kettle, a stolen watch, and a foghorn in horror. So you don't plan. You write.",
+                "Each episode opens with a 15-minute random writing exercise. Like three objects, one genre, drawn at random. You can't pre-plan a story about a kettle, a stolen watch, and a foghorn in horror. So you don't plan. You write.",
                 "Then we study the craft so you can already spot it in the draft you just wrote. Practice first, theory second.",
                 "You submit one finished story a week. I read every one. And give feedback..",
                 "Week 5: your five stories become a printed anthology. Your name on the cover. Shipped to your door.",
@@ -441,8 +440,8 @@ function Index() {
                   a: "Yes. The genre each week is whatever you draw. Romantasy, horror, literary, poetry, business fiction — the craft applies across all of them. Write what you want to write.",
                 },
                 {
-                  q: "What if I miss a session?",
-                  a: "Every session is recorded. Submitted work gets feedback regardless of attendance, and there are weekly office hours.",
+                  q: "What if I miss an episode?",
+                  a: "Every episode is recorded. Submitted work gets feedback regardless of attendance, and there are weekly office hours.",
                 },
                 {
                   q: "Is this for people who want to publish?",
