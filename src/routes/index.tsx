@@ -375,7 +375,7 @@ function Index() {
                 <br />
                 Fiction is how you metabolize what you learn.
               </p>
-              <figure className="my-8 py-5 px-6" style={{ backgroundColor: KRAFT_DEEP, borderLeft: `3px solid ${ACCENT}` }}>
+              <figure className="my-8 py-5 px-6" style={{ backgroundColor: KRAFT_BASE, borderLeft: `3px solid ${ACCENT}` }}>
                 <blockquote className="text-xl italic leading-relaxed">
                   "You'll walk away feeling like you want to write every single day."
                 </blockquote>
@@ -398,7 +398,7 @@ function Index() {
               <p>
                 A way to process what’s in your head in a way other writing styles cannot.
               </p>
-              <figure className="my-8 py-5 px-6" style={{ backgroundColor: KRAFT_DEEP, borderLeft: `3px solid ${ACCENT}` }}>
+              <figure className="my-8 py-5 px-6" style={{ backgroundColor: KRAFT_BASE, borderLeft: `3px solid ${ACCENT}` }}>
                 <blockquote className="text-xl italic leading-relaxed">
                   "One example of what I do differently now is I think about the transformation. Without transformation, a story always falls flat."
                 </blockquote>
