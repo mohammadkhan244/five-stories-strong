@@ -301,7 +301,7 @@ function Index() {
               <p>They make you sharper. An anthology makes you finished.</p>
               <p>If sharper is what you need, try those courses.</p>
               <p>If you're tired of being someone who hasn't finished anything, stay.</p>
-              <figure className="pt-10">
+              <figure className="my-8 py-5 px-6" style={{ backgroundColor: KRAFT_DEEP, borderLeft: `3px solid ${ACCENT}` }}>
                 <blockquote className="text-xl italic leading-relaxed">
                   "Most fiction cohorts rehash old stuff I've seen before. But this had material I've never seen. I looked forward to Saturday."
                 </blockquote>
@@ -375,7 +375,7 @@ function Index() {
                 <br />
                 Fiction is how you metabolize what you learn.
               </p>
-              <figure className="py-6">
+              <figure className="my-8 py-5 px-6" style={{ backgroundColor: KRAFT_DEEP, borderLeft: `3px solid ${ACCENT}` }}>
                 <blockquote className="text-xl italic leading-relaxed">
                   "You'll walk away feeling like you want to write every single day."
                 </blockquote>
@@ -398,7 +398,7 @@ function Index() {
               <p>
                 A way to process what’s in your head in a way other writing styles cannot.
               </p>
-              <figure className="pt-10">
+              <figure className="my-8 py-5 px-6" style={{ backgroundColor: KRAFT_DEEP, borderLeft: `3px solid ${ACCENT}` }}>
                 <blockquote className="text-xl italic leading-relaxed">
                   "One example of what I do differently now is I think about the transformation. Without transformation, a story always falls flat."
                 </blockquote>
