@@ -166,23 +166,19 @@ function Index() {
               A printed anthology of your work in five weeks. Living proof that what you think is worth saying.
             </p>
 
-
-
-            <div className="mt-10 space-y-6 text-lg leading-relaxed">
-              <p>
-                Last year, when I ran this cohort with marketers, finance professionals, environmental scientists, and one seasoned fiction writer,  I realized that I never taught them how to actually write a short story.
-              </p>
-              <p>
-                I just made it easy for them to realize they already know how to write a good one.
-              </p>
-            </div>
-
-            <div className="mt-12">
+            <div className="mt-10">
               <CTA />
               <p className="mt-4 font-sans text-sm font-light">
                 Enrollment open · Capped at 10 · Starts Saturday, August 1
               </p>
             </div>
+
+            <div className="mt-12 space-y-6 text-lg leading-relaxed">
+              <p>
+                Last year I ran this with marketers, engineers, and finance professionals. I never taught them how to write fiction. I just made it easy for them to realize they already knew how.
+              </p>
+            </div>
+
           </section>
 
           <div className="py-20 text-center">
