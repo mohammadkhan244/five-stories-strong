@@ -239,7 +239,7 @@ function Index() {
             </h2>
             <ol className="mt-10 space-y-10">
               {[
-                "Each episode opens with a 15-minute random writing exercise. Like three objects, one genre, drawn at random. You can't pre-plan a story about a kettle, a stolen watch, and a foghorn in horror. So you don't plan. You write.",
+                "Each episode opens with one creativity game. Six different prompts, a built-in timer, and a blank page. You can't pre-plan a story about a kettle, a stolen watch, and a foghorn in horror. So you don't plan. You write. Every episode starts with a draft already happening.",
                 "Then we study the craft so you can already spot it in the draft you just wrote. Practice first, theory second.",
                 "You submit one finished story a week. I read every one. And give feedback..",
                 "Week 5: your five stories become a printed anthology. Your name on the cover. Shipped to your door.",
@@ -269,10 +269,23 @@ function Index() {
                 {
                   title: "Episode 1: The part every story messes up",
                   body: (
-                    <p>
-                      How do you end the story? Most writers rush it, avoid it, or explain it. This episode is about the one move that makes an ending feel inevitable instead of finished.
-                    </p>
+                    <>
+                      <p>
+                        Each episode opens with one creativity game from a purpose-built prompt generator. Six different exercises including 3 nouns + 1 genre, metaphor games, random Wikipedia topics, and more. Hit generate, set the 15-minute timer, write. You leave every episode with a rough draft already on the page. Practice first, theory second.
+                      </p>
+                      <p className="mt-4">
+                        <a
+                          href="https://creativity-games.example.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ color: "#8B4000", textDecoration: "underline", textUnderlineOffset: "3px" }}
+                        >
+                          Try the creativity games →
+                        </a>
+                      </p>
+                    </>
                   ),
+
                 },
                 {
                   title: "Episode 2: Show, don't tell. (You've been lied to.)",
