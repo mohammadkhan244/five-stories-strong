@@ -275,7 +275,7 @@ function Index() {
                       </p>
                       <p className="mt-4">
                         <a
-                          href="https://creativity-games.example.com"
+                          href="https://creativity-games.vercel.app/"
                           target="_blank"
                           rel="noopener noreferrer"
                           style={{ color: "#8B4000", textDecoration: "underline", textUnderlineOffset: "3px" }}
