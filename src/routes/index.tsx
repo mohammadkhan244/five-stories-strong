@@ -21,7 +21,23 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "A five-week writing cohort. Finish five short stories. Receive a printed anthology with your name on the cover.",
+          "For writers who stopped trusting their own thinking. Five stories, five weeks. A printed anthology with your name on the cover.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://five-stories-strong.lovable.app/__l5e/assets-v1/901f0214-f064-4039-9844-3a8e34afd71b/five-stories-social-card.png",
+      },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:description",
+        content:
+          "For writers who stopped trusting their own thinking. Five stories, five weeks. A printed anthology with your name on the cover.",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://five-stories-strong.lovable.app/__l5e/assets-v1/901f0214-f064-4039-9844-3a8e34afd71b/five-stories-social-card.png",
       },
     ],
     links: [
@@ -31,6 +47,7 @@ export const Route = createFileRoute("/")({
       },
     ],
   }),
+
 });
 
 const STRIPE_URL = "https://buy.stripe.com/3cIbJ13Eo4S80wO8Gt4wM05";
@@ -241,8 +258,82 @@ function Index() {
           </section>
         </Band>
 
+        {/* BAND 3b: EPISODE CURRICULUM — Mid */}
+        <Band bg={KRAFT_MID} className="py-20 sm:py-24">
+          <section>
+            <h2 className="text-3xl leading-tight tracking-tight font-normal">
+              What you'll learn across five episodes.
+            </h2>
+            <Accordion type="single" collapsible className="mt-8 faq-accent">
+              {[
+                {
+                  title: "Episode 1: The part every story messes up",
+                  body: (
+                    <p>
+                      How do you end the story? Most writers rush it, avoid it, or explain it. This episode is about the one move that makes an ending feel inevitable instead of finished.
+                    </p>
+                  ),
+                },
+                {
+                  title: "Episode 2: Show, don't tell. (You've been lied to.)",
+                  body: (
+                    <>
+                      <p>
+                        You shouldn't show all the time. But you shouldn't tell either. So do you know when to show and when to tell?
+                      </p>
+                      <p className="mt-4">Here's an exercise: Is this showing or telling?</p>
+                      <p className="mt-4 italic">Houston flinched when he saw the dog.</p>
+                      <p className="mt-4">If you're unsure, this episode is for you.</p>
+                      <p className="mt-4">(Psst — it's telling.)</p>
+                    </>
+                  ),
+                },
+                {
+                  title: "Episode 3: The character mistake that makes readers stop caring",
+                  body: (
+                    <p>
+                      Character arcs and what makes a good character. Most writers focus on what the character does. This episode is about what the character wants — and why that's different.
+                    </p>
+                  ),
+                },
+                {
+                  title: "Episode 4: How to build a story without the reader noticing",
+                  body: (
+                    <p>
+                      Scene vs. story structure. The best stories hide their skeleton. This episode teaches you how to build the frame so the reader only sees what moves.
+                    </p>
+                  ),
+                },
+                {
+                  title: "Episode 5: Why finishing five short stories is how you write a novel",
+                  body: (
+                    <p>
+                      Depth through dialogue. And why everything you practiced in episodes 1–4 is the foundation for anything longer you want to write next.
+                    </p>
+                  ),
+                },
+              ].map((item, i) => (
+                <AccordionItem
+                  key={i}
+                  value={`ep-${i}`}
+                  className="border-b"
+                  style={{ borderColor: RULE }}
+                >
+                  <AccordionTrigger className="text-left text-lg font-normal hover:no-underline py-5 font-serif">
+                    {item.title}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-base leading-relaxed pb-6 pt-2 font-serif">
+                    {item.body}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </section>
+        </Band>
+
         {/* BAND 4: WHERE TO GO INSTEAD — Mid */}
         <Band bg={KRAFT_MID} className="py-20 sm:py-24">
+
           <section>
             <h2 className="text-3xl leading-tight tracking-tight font-normal">
               Don't buy. Instead, read this:
