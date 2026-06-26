@@ -341,8 +341,8 @@ function Index() {
           </section>
         </Band>
 
-        {/* BAND 4: WHERE TO GO INSTEAD — Mid */}
-        <Band bg={KRAFT_MID} className="py-20 sm:py-24">
+        {/* BAND 4: WHERE TO GO INSTEAD — Base */}
+        <Band bg={KRAFT_BASE} className="py-20 sm:py-24">
 
           <section>
             <h2 className="text-3xl leading-tight tracking-tight font-normal">
