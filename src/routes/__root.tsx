@@ -82,13 +82,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Five Stories Strong" },
       { name: "twitter:description", content: "You opened a Google Doc. Typed \"Chapter 1.\" Closed it. 3 months later, you opened it again. Same blink. Let's change it." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/85ccc354-94c8-413f-8f49-24bca6ba7454/id-preview-4f387af2--93369e49-f2e3-4b4b-8d4e-361f65b1946f.lovable.app-1778640221615.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/85ccc354-94c8-413f-8f49-24bca6ba7454/id-preview-4f387af2--93369e49-f2e3-4b4b-8d4e-361f65b1946f.lovable.app-1778640221615.png" },
+      { property: "og:image", content: "https://five-stories-strong.lovable.app/five-stories-social-card.svg" },
+      { name: "twitter:image", content: "https://five-stories-strong.lovable.app/five-stories-social-card.svg" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      {
+        rel: "icon",
+        type: "image/svg+xml",
+        href: "/favicon.svg",
       },
     ],
   }),

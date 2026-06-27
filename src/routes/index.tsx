@@ -25,8 +25,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:image",
-        content:
-          "https://five-stories-strong.lovable.app/__l5e/assets-v1/901f0214-f064-4039-9844-3a8e34afd71b/five-stories-social-card.png",
+        content: "https://five-stories-strong.lovable.app/five-stories-social-card.svg",
       },
       { name: "twitter:card", content: "summary_large_image" },
       {
@@ -36,8 +35,7 @@ export const Route = createFileRoute("/")({
       },
       {
         name: "twitter:image",
-        content:
-          "https://five-stories-strong.lovable.app/__l5e/assets-v1/901f0214-f064-4039-9844-3a8e34afd71b/five-stories-social-card.png",
+        content: "https://five-stories-strong.lovable.app/five-stories-social-card.svg",
       },
     ],
     links: [
