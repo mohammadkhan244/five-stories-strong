@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:image",
-        content: "https://five-stories-strong.lovable.app/five-stories-social-card.svg",
+        content: "https://imgur.com/a/JMsZmil",
       },
       { name: "twitter:card", content: "summary_large_image" },
       {
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
       },
       {
         name: "twitter:image",
-        content: "https://five-stories-strong.lovable.app/five-stories-social-card.svg",
+        content: "https://imgur.com/a/JMsZmil",
       },
     ],
     links: [

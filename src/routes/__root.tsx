@@ -82,8 +82,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Five Stories Strong" },
       { name: "twitter:description", content: "You opened a Google Doc. Typed \"Chapter 1.\" Closed it. 3 months later, you opened it again. Same blink. Let's change it." },
-      { property: "og:image", content: "https://five-stories-strong.lovable.app/five-stories-social-card.svg" },
-      { name: "twitter:image", content: "https://five-stories-strong.lovable.app/five-stories-social-card.svg" },
+      { property: "og:image", content: "https://imgur.com/a/JMsZmil" },
+      { name: "twitter:image", content: "https://imgur.com/a/JMsZmil" },
     ],
     links: [
       {
