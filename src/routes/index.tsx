@@ -206,16 +206,16 @@ function Index() {
           </div>
         </Band>
 
-        {/* BAND 1.5: WHO'S IN THE ROOM — Dark */}
-        <Band bg="#050403" className="py-20 sm:py-24">
+        {/* BAND 1.5: WHO'S IN THE ROOM — Base */}
+        <Band bg={KRAFT_BASE} className="py-20 sm:py-24">
           <section>
-            <h2 className="text-3xl leading-tight tracking-tight font-normal text-muted-foreground">
+            <h2 className="text-3xl leading-tight tracking-tight font-normal">
               Who's already in the room
             </h2>
           </section>
         </Band>
-        <div style={{ backgroundColor: "#050403" }} className="overflow-hidden">
-          <div className="ticker-track flex whitespace-nowrap text-lg leading-relaxed" style={{ color: "#f5f2ed" }}>
+        <div style={{ backgroundColor: KRAFT_BASE }} className="overflow-hidden">
+          <div className="ticker-track flex whitespace-nowrap text-lg leading-relaxed">
             {(() => {
               const items = [
                 "A People Ops leader who performs community theater on weekends",
@@ -233,7 +233,7 @@ function Index() {
             })()}
           </div>
         </div>
-        <Band bg="#050403" className="pt-6 pb-20 sm:pb-24">
+        <Band bg={KRAFT_BASE} className="pt-6 pb-20 sm:pb-24">
           <p className="text-sm text-muted-foreground text-center">6 spots remaining.</p>
         </Band>
 
