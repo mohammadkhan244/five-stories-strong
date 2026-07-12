@@ -206,6 +206,22 @@ function Index() {
           </div>
         </Band>
 
+        {/* BAND 1.5: WHO'S IN THE ROOM — Base */}
+        <Band bg={KRAFT_BASE} className="py-20 sm:py-24">
+          <section>
+            <h2 className="text-3xl leading-tight tracking-tight font-normal">
+              Who's already in the room
+            </h2>
+            <div className="mt-8 space-y-4 text-lg leading-relaxed">
+              <p>A People Ops leader who performs community theater on weekends.</p>
+              <p>A software engineer who can't stop noticing things nobody's named yet.</p>
+              <p>A writer with thirty years of drafts and one question he can't answer.</p>
+              <p>A man trying to build a map where none exists.</p>
+            </div>
+            <p className="mt-8 text-sm text-muted-foreground">6 spots remaining.</p>
+          </section>
+        </Band>
+
         {/* BAND 2: PREMISE — Mid */}
         <Band bg={KRAFT_MID} className="py-20 sm:py-24">
           <section>
