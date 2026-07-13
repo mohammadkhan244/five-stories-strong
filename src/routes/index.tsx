@@ -215,13 +215,13 @@ function Index() {
         {/* BAND 1.5: WHO'S IN THE ROOM */}
         <Band bg="#CEBE9C" className="py-20 sm:py-24">
           <section>
-            <h2 className="text-3xl leading-tight tracking-tight font-normal text-center" style={{ color: FG }}>
+            <h2 className="text-3xl leading-tight tracking-tight font-normal text-center" style={{ color: "#1F1B16" }}>
               Who's already in the room
             </h2>
           </section>
         </Band>
         <div style={{ backgroundColor: "#CEBE9C" }} className="overflow-hidden">
-          <div className="ticker-track flex whitespace-nowrap text-lg leading-relaxed" style={{ color: FG }}>
+          <div className="ticker-track flex whitespace-nowrap text-lg leading-relaxed" style={{ color: "#1F1B16" }}>
             {(() => {
               const items = [
                 "A People Ops leader who performs community theater on weekends",
