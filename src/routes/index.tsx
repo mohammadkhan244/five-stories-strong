@@ -182,7 +182,13 @@ function Index() {
             </p>
 
             <div className="mt-10">
-              <CTA />
+              <a
+                href={STRIPE_URL}
+                className="inline-flex items-center justify-center px-7 py-4 font-sans text-sm font-medium tracking-wide rounded-[3px] transition-opacity hover:opacity-90"
+                style={{ backgroundColor: "#1F1B16", color: "#FAF5EA" }}
+              >
+                Take Your Seat — $600
+              </a>
               <p className="mt-4 font-sans text-sm font-light">
                 Enrollment open · Capped at 10 · Starts Saturday, August 1
               </p>
@@ -206,16 +212,16 @@ function Index() {
           </div>
         </Band>
 
-        {/* BAND 1.5: WHO'S IN THE ROOM — Base */}
-        <Band bg={KRAFT_BASE} className="py-20 sm:py-24">
+        {/* BAND 1.5: WHO'S IN THE ROOM — Dark ink */}
+        <Band bg="#1F1B16" className="py-20 sm:py-24">
           <section>
-            <h2 className="text-3xl leading-tight tracking-tight font-normal">
+            <h2 className="text-3xl leading-tight tracking-tight font-normal text-center" style={{ color: "#FAF5EA" }}>
               Who's already in the room
             </h2>
           </section>
         </Band>
-        <div style={{ backgroundColor: KRAFT_BASE }} className="overflow-hidden">
-          <div className="ticker-track flex whitespace-nowrap text-lg leading-relaxed">
+        <div style={{ backgroundColor: "#1F1B16" }} className="overflow-hidden">
+          <div className="ticker-track flex whitespace-nowrap text-lg leading-relaxed" style={{ color: "#FAF5EA" }}>
             {(() => {
               const items = [
                 "A People Ops leader who performs community theater on weekends",
@@ -233,8 +239,8 @@ function Index() {
             })()}
           </div>
         </div>
-        <Band bg={KRAFT_BASE} className="pt-6 pb-20 sm:pb-24">
-          <p className="text-sm text-muted-foreground text-center">6 spots remaining.</p>
+        <Band bg="#1F1B16" className="pt-6 pb-20 sm:pb-24">
+          <p className="text-sm text-center" style={{ color: "#FAF5EA", opacity: 0.7 }}>6 spots remaining.</p>
         </Band>
 
 
