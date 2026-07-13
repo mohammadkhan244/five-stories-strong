@@ -316,15 +316,19 @@ function Index() {
                 {
                   title: "Episode 1: The part every story messes up",
                   body: (
-                    <p>
-                      How do you end the story? Most writers rush it, avoid it, or explain it. This episode is about the one move that makes an ending feel inevitable instead of finished.
-                    </p>
+                    <>
+                      <p className="italic text-sm text-muted-foreground mb-3">Writers get 20 pages in and a reader tells them their story ended on page 3.</p>
+                      <p>
+                        How do you end the story? Most writers rush it, avoid it, or explain it. This episode is about the one move that makes an ending feel inevitable instead of finished.
+                      </p>
+                    </>
                   ),
                 },
                 {
                   title: "Episode 2: Show, don't tell. (You've been lied to.)",
                   body: (
                     <>
+                      <p className="italic text-sm text-muted-foreground mb-3">There are times to show and times to tell. Most writers never learn the difference.</p>
                       <p>
                         You shouldn't show all the time. But you shouldn't tell either. So do you know when to show and when to tell?
                       </p>
@@ -338,25 +342,34 @@ function Index() {
                 {
                   title: "Episode 3: The character mistake that makes readers stop caring",
                   body: (
-                    <p>
-                      Character arcs and what makes a good character. Most writers focus on what the character does. This episode is about what the character wants — and why that's different.
-                    </p>
+                    <>
+                      <p className="italic text-sm text-muted-foreground mb-3">What forces you to change — habits or something external? Your character has the same problem.</p>
+                      <p>
+                        Character arcs and what makes a good character. Most writers focus on what the character does. This episode is about what the character wants — and why that's different.
+                      </p>
+                    </>
                   ),
                 },
                 {
                   title: "Episode 4: How to build a story without the reader noticing",
                   body: (
-                    <p>
-                      Scene vs. story structure. The best stories hide their skeleton. This episode teaches you how to build the frame so the reader only sees what moves.
-                    </p>
+                    <>
+                      <p className="italic text-sm text-muted-foreground mb-3">The goal is to give the audience exactly what they want in a way they don't expect.</p>
+                      <p>
+                        Scene vs. story structure. The best stories hide their skeleton. This episode teaches you how to build the frame so the reader only sees what moves.
+                      </p>
+                    </>
                   ),
                 },
                 {
                   title: "Episode 5: Why finishing five short stories is how you write a novel",
                   body: (
-                    <p>
-                      Depth through dialogue. And why everything you practiced in episodes 1–4 is the foundation for anything longer you want to write next.
-                    </p>
+                    <>
+                      <p className="italic text-sm text-muted-foreground mb-3">People don't say what they mean. People don't act how they want. Neither should your characters.</p>
+                      <p>
+                        Depth through dialogue. And why everything you practiced in episodes 1–4 is the foundation for anything longer you want to write next.
+                      </p>
+                    </>
                   ),
                 },
               ].map((item, i) => (
