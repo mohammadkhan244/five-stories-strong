@@ -224,10 +224,10 @@ function Index() {
           <div className="ticker-track flex whitespace-nowrap text-lg leading-relaxed" style={{ color: "#1F1B16" }}>
             {(() => {
               const items = [
-                "A People Ops leader who performs community theater on weekends",
-                "A software engineer who can't stop noticing things nobody's named yet",
-                "A writer with thirty years of drafts and one question he can't answer",
-                "A man trying to build a map where none exists",
+                "A People Ops leader at a robotics company who performs community theater on weekends.",
+                "A full-stack engineer who builds AI tools for a living and signed up terrified.",
+                "A novelist who's been writing the same novel since 2014, coaches other writers on how to finish, and is finishing his own this year.",
+                "A person writing about masculinity without the performance.",
               ];
               const loop = [...items, ...items];
               return loop.map((t, i) => (
