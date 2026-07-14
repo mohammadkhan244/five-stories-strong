@@ -240,7 +240,7 @@ function Index() {
           </div>
         </div>
         <Band bg="#CEBE9C" className="pt-6 pb-20 sm:pb-24">
-          <p className="text-lg text-center" style={{ color: "#1F1B16", opacity: 0.7 }}>6 spots remaining.</p>
+          <p className="text-xl leading-relaxed text-center" style={{ color: "#1F1B16", opacity: 0.7 }}>6 spots remaining.</p>
         </Band>
 
 
