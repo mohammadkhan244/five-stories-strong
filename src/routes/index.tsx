@@ -123,7 +123,7 @@ function CTA() {
       className="inline-flex items-center justify-center px-7 py-4 font-sans text-sm font-medium tracking-wide rounded-[3px] transition-opacity hover:opacity-90"
       style={{ backgroundColor: "#1F1B16", color: "#FAF5EA" }}
     >
-      Enroll — $600
+      Grab a Seat
     </a>
   );
 }
@@ -187,7 +187,7 @@ function Index() {
                 className="inline-flex items-center justify-center px-7 py-4 font-sans text-sm font-medium tracking-wide rounded-[3px] transition-opacity hover:opacity-90"
                 style={{ backgroundColor: "#1F1B16", color: "#FAF5EA" }}
               >
-                Take Your Seat — $600
+                Grab a Seat
               </a>
               <p className="mt-4 font-sans text-sm font-light">
                 Enrollment open · Capped at 10 · Starts Saturday, August 1
