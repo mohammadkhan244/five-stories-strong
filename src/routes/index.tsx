@@ -48,7 +48,7 @@ export const Route = createFileRoute("/")({
 
 });
 
-const STRIPE_URL = "https://buy.stripe.com/7sY4gz3Eo98ogvM5uh4wM07";
+const STRIPE_URL = "https://buy.stripe.com/3cI4gzfn6bgw6Vc3m94wM08";
 const ACCENT = "#C2772F";
 const LINK = "#8B4513";
 const RULE = "#B8A87E";
@@ -489,7 +489,7 @@ function Index() {
                   "Included",
                   "Live instruction, weekly written feedback on submitted work, printed anthology shipped to your door",
                 ],
-                ["Price", "$600"],
+                ["Price", "$300"],
                 ["Enrollment closes", "Until all 10 seats are filled"],
               ].map(([label, value]) => (
                 <div
@@ -595,7 +595,7 @@ function Index() {
                   a: "No. This is for people who want to finish. What you do with the stories after is yours.",
                 },
                 {
-                  q: "Why is it $600?",
+                  q: "Why is it $300?",
                   a: "Five weeks of live instruction, weekly office hours, written feedback on every submission, and a printed anthology shipped to your door.",
                 },
                 {
